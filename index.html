@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💝 Chúc mừng ngày 20/10 - Gửi Trang yêu thương 💝</title>
+    <meta name="description" content="Thiệp chúc mừng ngày Phụ nữ Việt Nam 20/10 dành tặng Trang yêu thương" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ═══ FALLING PETALS ═══ -->
+    <div class="petal-container" id="petalContainer"></div>
+
+    <!-- ═══ SPARKLES ═══ -->
+    <div id="sparkleContainer"></div>
+
+    <!-- ═══ SCREEN 1: GIFT BOX ═══ -->
+    <section id="screen1" aria-label="Màn hình chào mừng">
+        <p class="gift-label">Gửi công chúa của anh 👑<br />Nhấn để mở quà nhé! ❤️</p>
+
+        <div class="gift-box-wrapper" id="giftBoxWrapper" role="button" tabindex="0" aria-label="Nhấn để mở quà">
+            <div class="gift-box" id="giftBox">
+                <div class="box-lid">
+                    <div class="bow">
+                        <div class="bow-center"></div>
+                    </div>
+                </div>
+                <div class="box-body"></div>
+            </div>
+        </div>
+
+        <p class="tap-hint">👆 Tap vào hộp quà</p>
+    </section>
+
+    <!-- ═══ CONFETTI CANVAS ═══ -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- ═══ SCREEN 2: GREETING CARD ═══ -->
+    <section id="screen2" aria-label="Thiệp chúc mừng">
+        <div class="card" id="card">
+            <!-- Corner hearts -->
+            <span class="corner-heart tl">💕</span>
+            <span class="corner-heart tr">💕</span>
+            <span class="corner-heart bl">💕</span>
+            <span class="corner-heart br">💕</span>
+
+            <h1 class="card-title">🌹 Chúc mừng ngày Phụ nữ Việt Nam 20/10! 🌹</h1>
+            <p class="card-subtitle">~ Dành tặng người con gái đặc biệt nhất ~</p>
+
+            <div class="divider"></div>
+
+            <!-- Photo Polaroid -->
+            <div class="photo-frame">
+                <div class="polaroid">
+                    <div class="polaroid-inner">
+                        <!-- Thay "photo.jpg" bằng đường dẫn ảnh của bạn -->
+                        <img src="anh_chang.jpg" alt="Anh & Trang" class="polaroid-photo" />
+                    </div>
+                    <p class="polaroid-caption">Anh & Trang 💑</p>
+                </div>
+            </div>
+
+            <!-- Love message -->
+            <div class="message">
+                <p>
+                    Chào em, hôm nay là ngày đặc biệt dành cho em —
+                    người con gái mà anh yêu. 💗
+                </p>
+                <br />
+                <p>
+                    Cảm ơn em đã đến bên anh, đã biến những ngày bình thường thành những kỷ niệm
+                    ngọt ngào không thể nào quên. Từ những buổi đi đánh cầu lông cùng nhau, đến những lúc đi
+                    bên em, đi ăn cùng nhau, mỗi khoảnh khắc với em đều là món quà quý giá mà cuộc sống của anh. 🌸
+                </p>
+                <br />
+                <p>
+                    Anh chúc em luôn xinh đẹp, hạnh phúc và rạng rỡ như chính nụ cười em vậy.
+                    Dù mai sau có thế nào, anh vẫn sẽ luôn ở đây — yêu em, bảo vệ em và cùng em bước qua mọi mùa
+                    hoa. 🌷
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="signature">
+                <p>Mãi yêu em <span class="heart-icon">💝</span></p>
+                <p style="margin-top: 4px;">— Trần Tuấn Anh —</p>
+            </div>
+        </div>
+
+        <p class="footer">Được làm với tất cả tình yêu 💌 • 20/10
+            <br>
+            From TuanAnh With Love
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
